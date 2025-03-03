@@ -1,0 +1,95 @@
+@import url(https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto);
+@import url(https://db.onlinewebfonts.com/c/03613b6e684c3d8421fc15ef7e0214b5?family=Roboto+Regular);
+@import url(https://db.onlinewebfonts.com/c/002209bee8df7c3666a712ebd9253f60?family=Roboto+Bold);
+@import url(https://db.onlinewebfonts.com/c/021e919fd2310de5f9ad257e4b9be77e?family=Roboto+Medium);
+
+html,
+body {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #medium {
+        font-family: 'Roboto Medium', 'Roboto', sans-serif;
+    }
+
+    #bold {
+        font-family: 'Roboto Bold', 'Roboto', sans-serif;
+        ;
+    }
+
+    .nav-bar {
+        box-sizing: border-box;
+        position: fixed;
+        width: 100vw;
+        height: 6%;
+        background: white url(../logos/circle.svg) no-repeat;
+        background-position-y: center;
+        background-position-x: 4rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem 0 1rem;
+        align-items: center;
+
+
+        .more-info {
+            background-color: #FFC600;
+            width: 2.5rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .lines {
+                width: 1.2rem;
+                height: 3px;
+                background-color: white;
+                margin: 1.7px 0;
+            }
+        }
+
+        .nav-btn {
+            box-sizing: border-box;
+            background: #072AC8;
+            color: white;
+            border: #072AC8;
+            font-size: 15px;
+            line-height: 130%;
+            height: 2rem;
+            width: 6rem;
+        }
+
+        .nav-bar-menu {
+            display: flex;
+            position: absolute;
+            background-color: white;
+            list-style: none;
+            top: 100%;
+            left: 0;
+            width: 100vw;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.3s ease;
+
+            li {
+                text-align: center;
+                color: #6B708D;
+            }
+
+            li:hover {
+                color: #072AC8;
+            }
+        }
+
+        .nav-bar-menu.active {
+            height: 6rem;
+        }
+    }
+}
