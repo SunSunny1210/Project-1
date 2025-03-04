@@ -18,6 +18,19 @@ body {
         color: #292E47;
     }
 
+    .tiny-title {
+        text-align: center;
+        color: #292E47;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    #info-text {
+        color: #6B708D;
+        font-size: 13px;
+        padding: 0 10%;
+    }
+
     #medium {
         font-family: 'Roboto Medium', 'Roboto', sans-serif;
     }
@@ -191,19 +204,6 @@ body {
             align-items: center;
             justify-content: space-evenly;
 
-            .tiny-title {
-                text-align: center;
-                color: #292E47;
-                padding: 10px 0;
-                font-size: 15px;
-            }
-
-            #info-text {
-                color: #6B708D;
-                font-size: 13px;
-                padding: 0 10%;
-            }
-
             a {
                 padding: 15px 0;
                 text-decoration: none;
@@ -261,7 +261,7 @@ body {
 
             h3 {
                 color: white;
-                padding: 3rem 3rem 0;
+                padding: 4rem 3rem 0;
             }
         }
 
@@ -292,4 +292,42 @@ body {
             }
         }
     }
+
+    #services {
+        padding-top: 2rem;
+        
+        .services {
+            padding: 2rem 0 4rem;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+    
+            .service {
+                width: 80%;
+                background-color: white;
+                box-sizing: border-box;
+                box-shadow: 5px 10px 30px #b7b9c4;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 1rem;
+    
+                a {
+                    padding: 15px 0;
+                    text-decoration: none;
+                    color: #072AC8;
+                    font-size: 14px;
+                    
+                }
+    
+                a:active {
+                    color: #6B708D;
+                }
+            }
+        }
+    }
+
 }
