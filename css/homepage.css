@@ -12,7 +12,7 @@ body {
         padding: 0;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     h3 {
         text-align: center;
         color: #292E47;
@@ -76,7 +76,7 @@ body {
         .nav-btn {
             box-sizing: border-box;
             background: #072AC8;
-            color: #F4F6FC;
+            color: white;
             border: #072AC8;
             font-size: 15px;
             line-height: 130%;
@@ -209,7 +209,7 @@ body {
                 text-decoration: none;
                 color: #072AC8;
                 font-size: 13px;
-                
+
             }
 
             a:active {
@@ -231,22 +231,22 @@ body {
         position: relative;
         display: flex;
         justify-content: space-evenly;
-        
-        
-        .memojis-up{
+
+
+        .memojis-up {
             position: absolute;
             display: flex;
             justify-content: space-between;
             top: 0;
         }
 
-        .memojis-down{
+        .memojis-down {
             position: absolute;
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
             bottom: 0;
         }
-        
+
         img {
             width: 13%;
             padding: 8px;
@@ -295,7 +295,7 @@ body {
 
     #services {
         padding-top: 2rem;
-        
+
         .services {
             padding: 2rem 0 4rem;
             display: flex;
@@ -303,7 +303,7 @@ body {
             flex-direction: column;
             align-items: center;
             gap: 2rem;
-    
+
             .service {
                 width: 80%;
                 background-color: white;
@@ -314,15 +314,15 @@ body {
                 align-items: center;
                 justify-content: space-evenly;
                 padding: 1rem;
-    
+
                 a {
                     padding: 15px 0;
                     text-decoration: none;
                     color: #072AC8;
                     font-size: 14px;
-                    
+
                 }
-    
+
                 a:active {
                     color: #6B708D;
                 }
@@ -330,4 +330,42 @@ body {
         }
     }
 
+    .questions {
+        background-color: #FFC600;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+        color: #292E47;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        form {
+            input {
+                height: 40px;
+                width: 200px;
+                box-sizing: border-box;
+                border: white;
+                padding-left: 45px;
+                background: white url(../newsletter/icon/mail.svg) no-repeat;
+                background-position-y: center;
+                background-position-x: 10px;
+            }
+
+            button {
+                box-sizing: border-box;
+                background: #072AC8;
+                color: white;
+                border: #072AC8;
+                font-size: 15px;
+                line-height: 130%;
+                height: 40px;
+                width: 90px;
+            }
+        }
+    }
 }
