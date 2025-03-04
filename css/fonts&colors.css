@@ -1,0 +1,31 @@
+@import url(https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto);
+@import url(https://db.onlinewebfonts.com/c/03613b6e684c3d8421fc15ef7e0214b5?family=Roboto+Regular);
+@import url(https://db.onlinewebfonts.com/c/002209bee8df7c3666a712ebd9253f60?family=Roboto+Bold);
+@import url(https://db.onlinewebfonts.com/c/021e919fd2310de5f9ad257e4b9be77e?family=Roboto+Medium);
+
+:root {
+    --primary-blue: #072AC8;
+    --accent: #43D2FF;
+    --hover: #A2D6F9;
+    --tapped: #D1EDFF;
+    --dark-blue: #292E47;
+    --medium-blue: #6B708D;
+    --white-blue: #F4F6FC;
+    --light-blue: #ECF7FF;
+    --yellow: #FFC600;
+    --shadow: 0px 38.78px 77.55px 0px rgba(0,0,0,0.1);
+
+    --bold: 'Roboto Bold', 'Roboto', sans-serif;
+    --medium: 'Roboto Medium', 'Roboto', sans-serif;
+    --regular: 'Roboto Regular', 'Roboto', sans-serif;
+    --h1-size: 60px;
+    --h2-size: 50px;
+    --h3-size: 40px;
+    --h4-size: 24px;
+    --body-medium: 24px;
+    --body-regular: 20px;
+    --headline: 17px;
+    --caption-one: 15px;
+    --caption-two: 13px;
+}
+

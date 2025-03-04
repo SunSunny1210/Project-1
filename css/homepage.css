@@ -1,11 +1,8 @@
-@import url(https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto);
-@import url(https://db.onlinewebfonts.com/c/03613b6e684c3d8421fc15ef7e0214b5?family=Roboto+Regular);
-@import url(https://db.onlinewebfonts.com/c/002209bee8df7c3666a712ebd9253f60?family=Roboto+Bold);
-@import url(https://db.onlinewebfonts.com/c/021e919fd2310de5f9ad257e4b9be77e?family=Roboto+Medium);
+
 
 html,
 body {
-    background-color: #F4F6FC;
+    background-color: var(--white-blue);
 
     * {
         margin: 0;
@@ -15,18 +12,18 @@ body {
 
     h3 {
         text-align: center;
-        color: #292E47;
+        color: var(--dark-blue);
     }
 
     .tiny-title {
         text-align: center;
-        color: #292E47;
+        color: var(--dark-blue);
         padding: 10px 0;
         font-size: 15px;
     }
 
     #info-text {
-        color: #6B708D;
+        color: var(--medium-blue);
         font-size: 13px;
         padding: 0 10%;
     }
@@ -45,7 +42,7 @@ body {
         position: fixed;
         width: 100vw;
         height: 6%;
-        background: #F4F6FC url(../logos/circle.svg) no-repeat;
+        background: var(--white-blue) url(../logos/circle.svg) no-repeat;
         background-position-y: center;
         background-position-x: 4rem;
         display: flex;
@@ -56,7 +53,7 @@ body {
 
 
         .more-info {
-            background-color: #FFC600;
+            background-color: var(--yellow);
             width: 2.5rem;
             height: 2rem;
             border-radius: 50%;
@@ -75,9 +72,9 @@ body {
 
         .nav-btn {
             box-sizing: border-box;
-            background: #072AC8;
+            background: var(--primary-blue);
             color: white;
-            border: #072AC8;
+            border: var(--primary-blue);
             font-size: 15px;
             line-height: 130%;
             height: 2rem;
@@ -101,12 +98,12 @@ body {
 
             a {
                 text-align: center;
-                color: #6B708D;
+                color: var(--medium-blue);
                 text-decoration: none;
             }
 
             a:active {
-                color: #072AC8;
+                color: var(--primary-blue);
             }
         }
 
@@ -123,14 +120,14 @@ body {
         background-position-y: 12rem;
 
         .main-info {
-            color: #6B708D;
+            color: var(--medium-blue);
             padding: 1rem;
             line-height: 30px;
             width: 45%;
         }
 
         h1 {
-            color: #292E47;
+            color: var(--dark-blue);
             text-align: center;
             padding: 1rem 2rem;
             line-height: 40px;
@@ -159,9 +156,9 @@ body {
 
             .touch {
                 box-sizing: border-box;
-                background: #072AC8;
+                background: var(--primary-blue);
                 color: white;
-                border: #072AC8;
+                border: var(--primary-blue);
                 font-size: 15px;
                 line-height: 130%;
                 height: 2rem;
@@ -170,9 +167,9 @@ body {
 
             .work {
                 box-sizing: border-box;
-                background: #F4F6FC;
-                color: #6B708D;
-                border: #F4F6FC;
+                background: var(--white-blue);
+                color: var(--medium-blue);
+                border: var(--white-blue);
                 font-size: 15px;
                 line-height: 130%;
                 height: 2rem;
@@ -193,12 +190,15 @@ body {
         padding: 1rem 0 4rem;
         display: flex;
         justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
 
         .project {
-            width: 30%;
+            width: 80%;
             background-color: white;
             box-sizing: border-box;
-            box-shadow: 5px 10px 30px#b7b9c4;
+            box-shadow: var(--shadow);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -207,17 +207,16 @@ body {
             a {
                 padding: 15px 0;
                 text-decoration: none;
-                color: #072AC8;
+                color: var(--primary-blue);
                 font-size: 13px;
-
             }
 
             a:active {
-                color: #6B708D;
+                color: var(--medium-blue);
             }
 
             img {
-                height: 5rem;
+                height: 9rem;
                 width: 100%;
             }
         }
@@ -226,7 +225,7 @@ body {
 
     .clients {
         box-sizing: border-box;
-        background: #292E47 url(../testimonial-section/orbit.png) no-repeat;
+        background: var(--dark-blue) url(../testimonial-section/orbit.png) no-repeat;
         background-size: 100% 100%;
         position: relative;
         display: flex;
@@ -255,7 +254,7 @@ body {
         .clients-info {
             .clients-text {
                 text-align: center;
-                color: #FFC600;
+                color: var(--yellow);
                 padding: 3rem;
             }
 
@@ -279,15 +278,15 @@ body {
 
             .profile-text {
                 #name {
-                    color: #A2D6F9
+                    color: var(--hover)
                 }
 
                 #name:active {
-                    color: #072AC8;
+                    color: var(--primary-blue);
                 }
 
                 #url {
-                    color: #F4F6FC;
+                    color: var(--white-blue);
                 }
             }
         }
@@ -308,7 +307,7 @@ body {
                 width: 80%;
                 background-color: white;
                 box-sizing: border-box;
-                box-shadow: 5px 10px 30px #b7b9c4;
+                box-shadow: var(--shadow);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -318,27 +317,27 @@ body {
                 a {
                     padding: 15px 0;
                     text-decoration: none;
-                    color: #072AC8;
+                    color: var(--primary-blue);
                     font-size: 14px;
 
                 }
 
                 a:active {
-                    color: #6B708D;
+                    color: var(--medium-blue);
                 }
             }
         }
     }
 
     .questions {
-        background-color: #FFC600;
+        background-color: var(--yellow);
         padding: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         height: 10rem;
-        color: #292E47;
+        color: var(--dark-blue);
 
         h3 {
             font-size: 1.5rem;
@@ -358,9 +357,9 @@ body {
 
             button {
                 box-sizing: border-box;
-                background: #072AC8;
+                background: var(--primary-blue);
                 color: white;
-                border: #072AC8;
+                border: var(--primary-blue);
                 font-size: 15px;
                 line-height: 130%;
                 height: 40px;
@@ -372,7 +371,7 @@ body {
     
     footer {
         padding: 5rem 1rem 2rem;
-        color: #6B708D;
+        color: var(--medium-blue);
 
         address {
             padding: 1rem 0;
@@ -393,11 +392,11 @@ body {
                 gap: 1rem;
                 a{
                     text-decoration: none;
-                    color: #6B708D;
+                    color: var(--medium-blue);
                 }
     
                 a:active {
-                    color: #072AC8;
+                    color: var(--primary-blue);
                 }
             }
         }
