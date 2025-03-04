@@ -5,10 +5,17 @@
 
 html,
 body {
+    background-color: #F4F6FC;
+
     * {
         margin: 0;
         padding: 0;
         font-family: 'Roboto', sans-serif;
+    }
+    
+    h3 {
+        text-align: center;
+        color: #292E47;
     }
 
     #medium {
@@ -25,7 +32,7 @@ body {
         position: fixed;
         width: 100vw;
         height: 6%;
-        background: white url(../logos/circle.svg) no-repeat;
+        background: #F4F6FC url(../logos/circle.svg) no-repeat;
         background-position-y: center;
         background-position-x: 4rem;
         display: flex;
@@ -56,7 +63,7 @@ body {
         .nav-btn {
             box-sizing: border-box;
             background: #072AC8;
-            color: white;
+            color: #F4F6FC;
             border: #072AC8;
             font-size: 15px;
             line-height: 130%;
@@ -104,11 +111,11 @@ body {
 
         .main-info {
             color: #6B708D;
-            padding: 1rem 1rem;
+            padding: 1rem;
             line-height: 30px;
-            width: 50%;
+            width: 45%;
         }
-        
+
         h1 {
             color: #292E47;
             text-align: center;
@@ -135,7 +142,7 @@ body {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            padding-top: 1rem;
+            padding-top: 2rem;
 
             .touch {
                 box-sizing: border-box;
@@ -147,12 +154,12 @@ body {
                 height: 2rem;
                 width: 6rem;
             }
-    
+
             .work {
                 box-sizing: border-box;
-                background: white;
+                background: #F4F6FC;
                 color: #6B708D;
-                border: white;
+                border: #F4F6FC;
                 font-size: 15px;
                 line-height: 130%;
                 height: 2rem;
@@ -170,6 +177,119 @@ body {
     }
 
     .projects {
+        padding: 1rem 0 4rem;
+        display: flex;
+        justify-content: space-evenly;
 
+        .project {
+            width: 30%;
+            background-color: white;
+            box-sizing: border-box;
+            box-shadow: 5px 10px 30px#b7b9c4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .tiny-title {
+                text-align: center;
+                color: #292E47;
+                padding: 10px 0;
+                font-size: 15px;
+            }
+
+            #info-text {
+                color: #6B708D;
+                font-size: 13px;
+                padding: 0 10%;
+            }
+
+            a {
+                padding: 15px 0;
+                text-decoration: none;
+                color: #072AC8;
+                font-size: 13px;
+                
+            }
+
+            a:active {
+                color: #6B708D;
+            }
+
+            img {
+                height: 5rem;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .clients {
+        box-sizing: border-box;
+        background: #292E47 url(../testimonial-section/orbit.png) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+        .memojis-up{
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            top: 0;
+        }
+
+        .memojis-down{
+            position: absolute;
+            display: flex;
+            justify-content:space-between;
+            bottom: 0;
+        }
+        
+        img {
+            width: 13%;
+            padding: 8px;
+        }
+
+        .clients-info {
+            .clients-text {
+                text-align: center;
+                color: #FFC600;
+                padding: 3rem;
+            }
+
+            h3 {
+                color: white;
+                padding: 3rem 3rem 0;
+            }
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 4rem;
+
+            .profile-photo {
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+            }
+
+            .profile-text {
+                #name {
+                    color: #A2D6F9
+                }
+
+                #name:active {
+                    color: #072AC8;
+                }
+
+                #url {
+                    color: #F4F6FC;
+                }
+            }
+        }
     }
 }
