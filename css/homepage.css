@@ -366,6 +366,40 @@ body {
                 height: 40px;
                 width: 90px;
             }
+
+        }
+    }
+    
+    footer {
+        padding: 5rem 1rem 2rem;
+        color: #6B708D;
+
+        address {
+            padding: 1rem 0;
+        }
+
+        .links {
+            padding-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            font-size: 20px;
+
+            .link {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 1rem;
+                a{
+                    text-decoration: none;
+                    color: #6B708D;
+                }
+    
+                a:active {
+                    color: #072AC8;
+                }
+            }
         }
     }
 }
