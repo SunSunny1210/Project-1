@@ -13,9 +13,9 @@ body {
     }
 
     #bold {
-        font-family: var(--bold)
-        ;
+        font-family: var(--bold);
     }
+
     .nav-bar {
         box-sizing: border-box;
         position: fixed;
@@ -29,8 +29,8 @@ body {
         padding: 0 1rem 0 1rem;
         align-items: center;
         z-index: 1;
-    
-    
+
+
         .more-info {
             background-color: var(--yellow);
             width: 2.5rem;
@@ -40,7 +40,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-    
+
             .lines {
                 width: 1.2rem;
                 height: 3px;
@@ -48,7 +48,7 @@ body {
                 margin: 1.7px 0;
             }
         }
-    
+
         .nav-btn {
             box-sizing: border-box;
             background: var(--primary-blue);
@@ -59,7 +59,7 @@ body {
             height: 2rem;
             width: 6rem;
         }
-    
+
         .nav-bar-menu {
             display: flex;
             position: absolute;
@@ -74,31 +74,86 @@ body {
             height: 0;
             overflow: hidden;
             transition: height 0.3s ease;
-    
+
             a {
                 text-align: center;
                 color: var(--medium-blue);
                 text-decoration: none;
             }
-    
+
             a:active {
                 color: var(--primary-blue);
             }
         }
-    
+
         .nav-bar-menu.active {
             height: 6rem;
         }
     }
-    
+
+    .contact {
+        padding: 5rem 1.5rem 0;
+
+        h1 {
+            color: var(--dark-blue);
+            font-size: 40px;
+        }
+
+        .form {
+            padding-top: 2rem;
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 1rem;
+
+                label {
+                    color: var(--medium-blue);
+                    font-size: 20px;
+                }
+
+                input {
+                    height: 4rem;
+                    background-color: #6B708D1A;
+                    box-sizing: border-box;
+                    border: none;
+                    padding-left: 1rem;
+                }
+
+                textarea {
+                    background-color: #6B708D1A;
+                    box-sizing: border-box;
+                    border: none;
+                    padding: 1rem;
+                    font-size: 14px;
+                    resize: none;
+                    height: 8rem;
+                }
+
+                button {
+                    box-sizing: border-box;
+                    background: var(--primary-blue);
+                    color: white;
+                    border: var(--primary-blue);
+                    font-size: 15px;
+                    line-height: 130%;
+                    height: 2rem;
+                }
+            }
+        }
+
+    }
+
     footer {
         padding: 5rem 1rem 2rem;
         color: var(--medium-blue);
-    
+
         address {
             padding: 1rem 0;
         }
-    
+
         .links {
             padding-top: 2rem;
             display: flex;
@@ -106,17 +161,18 @@ body {
             justify-content: space-evenly;
             text-align: center;
             font-size: 20px;
-    
+
             .link {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 gap: 1rem;
-                a{
+
+                a {
                     text-decoration: none;
                     color: var(--medium-blue);
                 }
-    
+
                 a:active {
                     color: var(--primary-blue);
                 }
@@ -124,4 +180,3 @@ body {
         }
     }
 }
-
