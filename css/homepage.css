@@ -232,7 +232,7 @@ body {
                 position: relative;
 
                 .number-text {
-                    padding: 1rem 3rem;
+                    padding: 1rem 3.5rem;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -265,7 +265,7 @@ body {
             border: none;
             cursor: pointer;
             height: 100%;
-            width: 2rem;
+            width: 2.5rem;
             z-index: 2;
         }
         
@@ -289,6 +289,7 @@ body {
 
 
         .memojis-up {
+            width: 100%;
             position: absolute;
             display: flex;
             justify-content: space-between;
@@ -296,6 +297,7 @@ body {
         }
 
         .memojis-down {
+            width: 100%;
             position: absolute;
             display: flex;
             justify-content: space-between;
@@ -311,7 +313,7 @@ body {
             .clients-text {
                 text-align: center;
                 color: var(--yellow);
-                padding: 3rem;
+                padding: 2rem;
             }
 
             h3 {
@@ -454,6 +456,109 @@ body {
 
                 a:active {
                     color: var(--primary-blue);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .nav-bar {
+            height: 4rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        #main {
+            padding-top: 6rem;
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            .main-info {
+                font-size: 1.4rem;
+                line-height: 45px;
+                padding-bottom: 2rem;
+            }
+
+            .btns {
+                .work, 
+                .touch {
+                    height: 3rem;
+                    width: 7rem;
+                }
+            }
+        }
+
+        .logos {
+            padding: 4rem 0;
+        }
+
+        #projects {
+            button {
+                width: 20%;
+            }
+            
+            .projects {
+                width: 60%;
+
+                .number-text {
+                    padding-left: 1.5rem;
+                }
+            }
+        }
+
+        .clients {
+            padding-top: 3rem;
+
+            .clients-text {
+                font-size: 1.3rem;
+            }
+        }
+
+        #services {
+            .services {
+                .service {
+                    gap: 2rem;
+                    padding: 2rem 0;
+        
+                    .tiny-title {
+                        font-size: large;
+                    }
+        
+                    #info-text {
+                        font-size: large;
+                        text-align: center;
+                    }
+        
+                    a {
+                        font-size: large;
+                    }
+                }
+            }
+        }
+
+        .questions {
+            height: 15rem;
+            justify-content: space-around;
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            form {
+                display: flex;
+                gap: 1rem;
+
+                input {
+                    width: 65vw;
+                    height: 4rem;
+                }
+
+                button {
+                    width: 7rem;
+                    height: 4rem;
                 }
             }
         }

@@ -55,7 +55,6 @@ body {
             color: white;
             border: var(--primary-blue);
             font-size: 15px;
-            line-height: 130%;
             height: 2rem;
             width: 6rem;
         }
@@ -175,6 +174,22 @@ body {
 
                 a:active {
                     color: var(--primary-blue);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .nav-bar {
+            height: 4rem;
+        }
+
+        .contact {
+            .form {
+                form{
+                    button {
+                        height: 3rem;
+                    }
                 }
             }
         }
