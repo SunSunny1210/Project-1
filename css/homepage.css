@@ -232,7 +232,7 @@ body {
                 position: relative;
 
                 .number-text {
-                    padding: 1rem 3rem;
+                    padding: 1rem 3.5rem;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -265,7 +265,7 @@ body {
             border: none;
             cursor: pointer;
             height: 100%;
-            width: 2rem;
+            width: 2.5rem;
             z-index: 2;
         }
         
@@ -507,8 +507,6 @@ body {
                     padding-left: 1.5rem;
                 }
             }
-
-            
         }
 
         .clients {
