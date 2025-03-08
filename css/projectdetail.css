@@ -75,7 +75,6 @@ body {
             color: white;
             border: var(--primary-blue);
             font-size: 15px;
-            line-height: 130%;
             height: 2rem;
             width: 6rem;
         }
