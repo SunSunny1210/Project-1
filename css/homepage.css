@@ -480,7 +480,7 @@ body {
         }
     }
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 700px) and (max-width: 999px) {
         .nav-bar {
             height: 4rem;
         }
@@ -595,6 +595,18 @@ body {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+            }
+
+            h2 {
+                font-size: var(--h2-size);
+            }
+
+            h3 {
+                font-size: var(--h3-size);
+            }
+
+            h4 {
+                font-size: var(--h4-size);
             }
 
             .tiny-title {
@@ -773,7 +785,6 @@ body {
                     margin: 0 170px 200px;  
 
                     h3 {
-                        font-size: var(--h3-size);
                         text-align: start;
                         width: 285px;
                         height: 94px;
@@ -830,6 +841,37 @@ body {
                                 }
                             }
                         }
+                    }
+                }
+            }
+
+            #press {
+                margin: 0 60px;
+                height: 622px;
+
+                .clients {
+
+                    .clients-info {
+                        margin: 120px 349px 0 350px;
+                        
+                        h3 {
+                            padding: 0;
+                            height: 40px;
+                        }
+                    }
+
+                    .memojis-up {
+                        padding: 51px 91px 0 76px;
+                    }
+
+                    .memojis-down {
+                        padding: 0 72px 73px 63px;
+                    }
+
+                    img {
+                        padding: 0;
+                        height: 150px;
+                        width: 150px;
                     }
                 }
             }
