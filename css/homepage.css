@@ -581,6 +581,8 @@ body {
 
         html,
         body {
+            margin: 0 auto;
+
             * {
                 margin: 0;
                 padding: 0;
@@ -643,23 +645,24 @@ body {
             }
 
             #main {
+                margin-top: 100px;
                 height: 650px;
                 padding: 0;
+                position: relative;
 
                 .main-section.mobile {
                     display: none;
                 }
 
                 .main-section.desktop {
-                    top: 100px;
                     display: block;
                     margin: 0 170px;
                     height: 100%;
-                    position: relative;
 
                     .main {
                         .main-left {
-                            margin: 109px 0 119px 170px;
+                            margin-top: 109px;
+                            margin-bottom: 119px;
                             height: 422px;
                             width: 530px;
 
@@ -699,6 +702,7 @@ body {
                         
                         .hero-img {
                             width: 570px;
+                            top: 0;
 
                             .hero {
                                 height: 637px;
@@ -729,8 +733,19 @@ body {
             }
 
             .logos {
+                margin-top: 130px;
+                margin-bottom: 200px;
                 height: 96px;
+                padding: 0 170px;
+                justify-content: space-between;
+
+                .logo {
+                    height: 96px;
+                    width: 150px;
+                }
             }
+
+            #projects
         }
 
     }
