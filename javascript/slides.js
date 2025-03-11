@@ -6,9 +6,9 @@ const projectImg = document.querySelectorAll('.project-img');
 
 projectSlides.forEach((el, i) => {
     if (i === currentIndex) {
-        el.style.visibility = 'visible';
+        el.classList.add('visible');
     } else {
-        el.style.visibility = 'hidden';
+        el.classList.add('hidden');
     }
 });
 

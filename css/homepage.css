@@ -245,6 +245,14 @@ body {
                 justify-content: space-between;
                 position: relative;
 
+                &.visible {
+                    visibility: visible;
+                }
+
+                &.hidden {
+                    visibility: hidden;
+                }
+
                 .number-text {
                     padding: 1rem 3.5rem;
                     position: absolute;
@@ -745,8 +753,36 @@ body {
                 }
             }
 
-            #projects
-        }
+            #projects {
+                button,
+                .number-text {
+                    display: none;
+                }
 
+                .project-detail {
+                    margin: 0 170px;
+
+                    h3 {
+                        font-size: var(--h3-size);
+                        text-align: start;
+                        width: 285px;
+                        height: 94px;
+                        margin-bottom: 23px;
+                    }
+    
+                    .slider {
+                        margin: 0;
+                        width: 444px;
+                        .projects {
+                            transition: none;
+                            .project {
+                                visibility: visible;
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
