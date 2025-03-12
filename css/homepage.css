@@ -14,7 +14,7 @@ body {
         text-align: center;
         color: var(--dark-blue);
     }
-
+    
     .tiny-title {
         text-align: center;
         color: var(--dark-blue);
@@ -695,7 +695,6 @@ body {
                     .nav-btn {
                         height: 52px;
                         width: 150px;
-                        padding: 15px 33px;
                         font-size: var(--headline);
                     }
 
@@ -793,12 +792,25 @@ body {
                 margin-top: 130px;
                 margin-bottom: 200px;
                 height: 96px;
-                padding: 0 170px;
                 justify-content: space-between;
 
-                .logo {
-                    height: 96px;
-                    width: 150px;
+                .logos-container {
+                    margin: 0 170px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .logo-container {
+                        height: 96px;
+                        width: 150px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .logo {
+                            height: fit-content;
+                        }
+                    }
                 }
             }
 
@@ -907,11 +919,7 @@ body {
                                     font-size: var(--headline);
                                     line-height: 100%;
                                     margin-bottom: 5px;
-                                    color: var(--primary-blue);
-
-                                    &:hover {
-                                        color: var(--hover);
-                                    }
+                                    color: var(--hover);
                                 }
 
                                 #url {
@@ -1008,16 +1016,12 @@ body {
 
                         h3 {
                             font-size: var(--h3-size);
-                            width: 500px;
-                            height: 47px;
                         }
     
                         p {
                             font-size: var(--body-regular);
                             margin-bottom: 50px;
                             margin-top: 20px;
-                            height: 30px;
-                            width: 139px;
                         }
     
                         form {
@@ -1045,7 +1049,53 @@ body {
                             }
                         }
                     }
+                }
+            }
 
+            footer {
+                margin-top: 170px;
+                padding: 30px 170px 100px;
+                height: 242px;
+                
+                .footer {
+                    height: 112px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    .address {
+                        width: 260px;
+
+                        img {
+                            height: 30px;
+                            width: 98.38px;
+                            margin-bottom: 30px;
+                        }
+
+                        address {
+                            padding: 0;
+                            font-size: var(--headline);
+                            font-style: normal;
+                            line-height: var(--regular-height);
+                            height: 52px;
+                        }
+                    }
+
+                    .links {
+                        padding: 0;
+                        width: 435px;
+                        justify-content: space-between;
+                        gap: 106px;
+
+                         .link {
+                            height: 112px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            font-size: var(--headline);
+                            text-align: start;
+                         }
+                    }
                 }
             }
         }
