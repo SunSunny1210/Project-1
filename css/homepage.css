@@ -411,41 +411,43 @@ body {
         }
     }
 
-    .questions {
+    #questions {
         background-color: var(--yellow);
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 15rem;
-        color: var(--dark-blue);
 
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        form {
-            input {
-                height: 40px;
-                width: 200px;
-                border: white;
-                padding-left: 45px;
-                background: white url(../newsletter/icon/mail.svg) no-repeat;
-                background-position-y: center;
-                background-position-x: 10px;
+        .questions {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 15rem;
+            color: var(--dark-blue);
+    
+            h3 {
+                font-size: 1.5rem;
             }
-
-            button {
-                background: var(--primary-blue);
-                color: white;
-                border: var(--primary-blue);
-                font-size: 15px;
-                line-height: 130%;
-                height: 40px;
-                width: 90px;
+    
+            form {
+                input {
+                    height: 40px;
+                    width: 200px;
+                    border: white;
+                    padding-left: 45px;
+                    background: white url(../newsletter/icon/mail.svg) no-repeat;
+                    background-position-y: center;
+                    background-position-x: 10px;
+                }
+    
+                button {
+                    background: var(--primary-blue);
+                    color: white;
+                    border: var(--primary-blue);
+                    font-size: 15px;
+                    line-height: 130%;
+                    height: 40px;
+                    width: 90px;
+                }
             }
-
         }
     }
 
@@ -990,6 +992,60 @@ body {
                         }
 
                     }
+                }
+            }
+            
+            #questions {
+                margin: 0 60px;
+                padding: 136px 110px 137px;
+                height: 500px;
+                
+                .questions-info {
+                    .questions {
+                        height: 227px;
+                        width: 1100px;
+                        padding: 0;
+
+                        h3 {
+                            font-size: var(--h3-size);
+                            width: 500px;
+                            height: 47px;
+                        }
+    
+                        p {
+                            font-size: var(--body-regular);
+                            margin-bottom: 50px;
+                            margin-top: 20px;
+                            height: 30px;
+                            width: 139px;
+                        }
+    
+                        form {
+                            input {
+                                padding-left: 70px;
+                                height: 80px;
+                                width: 393px;
+                                background-position-x: 30px;
+                                background-size: 30px;
+                                background-position-y: 25px;
+                            }
+
+                            input::placeholder {
+                                color: var(--dark-blue);
+                                font-size: var(--headline);
+                                line-height: var(--regular-height);
+                            }
+    
+                            button {
+                                height: 80px;
+                                width: 198px;
+                                font-size: var(--headline);
+                                line-height: var(--medium-height);
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+
                 }
             }
         }
