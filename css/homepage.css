@@ -636,11 +636,13 @@ body {
             .tiny-title {
                 font-size: var(--body-medium);
                 line-height: var(--medium-height);
+                padding: 0;
             }
 
             #info-text {
                 font-size: var(--headline);
                 line-height: var(--regular-height);
+                padding: 0;
             }
 
             header {
@@ -839,7 +841,6 @@ body {
                                 #info-text,
                                 a,
                                 .tiny-title {
-                                    padding: 0;
                                     margin-left: 30px;
                                 }
 
@@ -857,6 +858,7 @@ body {
                                 }
 
                                 a {
+                                    padding: 0;
                                     font-size: var(--body-regular);
                                 }
 
@@ -934,6 +936,59 @@ body {
                         padding: 0;
                         height: 150px;
                         width: 150px;
+                    }
+                }
+            }
+
+            #services {
+                padding: 0 170px 64px;
+                margin-top: 200px;
+
+                h3 {
+                    text-align: start;
+                    margin-bottom: 70px;
+                }
+                .services {
+                    padding: 0;
+                    flex-direction: row;
+                    gap: 40px;
+
+                    .service {
+                        padding: 40px 30px 30px;
+                        height: 380px;
+                        width: 340px;
+                        align-items: flex-start;
+                        justify-content: center;
+
+                        a {
+                            padding: 0;
+                            font-size: var(--headline);
+                        }
+
+                        #info-text {
+                            height: 90px;
+                            width: 280px;
+                            font-size: var(--body-regular);
+                            margin-top: 20px;
+                            margin-bottom: 36px;
+                        }
+
+                        .serv-logo {
+                            margin-bottom: 30px;
+                            height: 80px;
+                            width: 80px;
+                            background-color: var(--light-blue);
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                height: 40px;
+                                width: 40px;
+                            }
+                        }
+
                     }
                 }
             }
