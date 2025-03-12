@@ -309,7 +309,7 @@ body {
         }
     }
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 700px) and (max-width: 1024px) {
         .nav-bar {
             height: 4rem;
         }
@@ -348,6 +348,148 @@ body {
                 button {
                     width: 7rem;
                     height: 4rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1025px) {
+        html,
+        body {
+            margin: 0 auto;
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            h2 {
+                font-size: var(--h2-size);
+            }
+
+            h3 {
+                font-size: var(--h3-size);
+            }
+
+            h4 {
+                font-size: var(--h4-size);
+            }
+
+            .tiny-title {
+                font-size: var(--body-medium);
+                line-height: var(--medium-height);
+                padding: 0;
+            }
+
+            #info-text {
+                font-size: var(--headline);
+                line-height: var(--regular-height);
+                padding: 0;
+            }
+
+            header {
+                height: 122px;
+                width: 100%;
+                padding: 70px 170.64px 0;
+                position: static;
+
+                .nav-bar {
+                    position: static;
+                    height: 52px;
+                    padding: 0;
+                    width: 100%;
+                    max-width: 1099.36px;
+                    background-image: none;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .nav-bar-menu {
+                        position: static;
+                        width: 295px;
+                        height: 22px;
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 60px;
+                        flex-direction: row;
+                        align-items: center;
+
+                        li {
+                            font-size: var(--headline);
+
+                            a:hover {
+                                color: var(--primary-blue);
+                            }
+                        }
+
+                    }
+
+                    .circle {
+                        display: block;
+                        height: 18.46px;
+                        width: 60.53px;
+                    }
+
+                    .more-info {
+                        display: none;
+                    }
+
+                    .nav-btn {
+                        height: 52px;
+                        width: 150px;
+                        font-size: var(--headline);
+                    }
+
+                }
+            }
+
+            .article {
+                margin: 140px 170px 0;
+                
+                article {
+                    .header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .titles {
+                            padding: 0;
+                            margin-bottom: 80px;
+                            width: 530px;
+        
+                            h1 {
+                                font-size: var(--h1-size);
+                                margin-bottom: 20px;
+                                height: 70px;
+                            }
+        
+                            p {
+                                padding: 0;
+                                font-size: var(--headline);
+                                height: 28px;
+                            }
+                        }
+        
+                        .date {
+                            padding: 0;
+                            font-size: var(--body-regular);
+                            line-height: var(--regular-height);
+                            height: 30px;
+                        }
+                    }
+
+                    .images {
+                        width: 1100px;
+
+                        img {
+                            width: 100%;
+                            height: 444px;
+                        }
+
+                        .blur {
+                            filter: blur(80px);
+                        }
+                    }
                 }
             }
         }
