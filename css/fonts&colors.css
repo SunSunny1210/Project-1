@@ -1,38 +1,4 @@
-@font-face {
-    font-family: 'robotobold';
-    src: url('Roboto-Bold-webfont.eot');
-    src: url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Bold-webfont.woff2') format('woff2'),
-         url('Roboto-Bold-webfont.woff') format('woff'),
-         url('Roboto-Bold-webfont.ttf') format('truetype'),
-         url('Roboto-Bold-webfont.svg#robotobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'robotomedium';
-    src: url('Roboto-Medium-webfont.eot');
-    src: url('Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Medium-webfont.woff2') format('woff2'),
-         url('Roboto-Medium-webfont.woff') format('woff'),
-         url('Roboto-Medium-webfont.ttf') format('truetype'),
-         url('Roboto-Medium-webfont.svg#robotomedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'robotoregular';
-    src: url('Roboto-Regular-webfont.eot');
-    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Regular-webfont.woff2') format('woff2'),
-         url('Roboto-Regular-webfont.woff') format('woff'),
-         url('Roboto-Regular-webfont.ttf') format('truetype'),
-         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --primary-blue: #072AC8;
@@ -46,9 +12,10 @@
     --yellow: #FFC600;
     --shadow: 0px 38.78px 77.55px 0px rgba(0,0,0,0.1);
 
-    --bold: 'robotobold', 'Roboto', sans-serif;
-    --medium: 'robotomedium', 'Roboto', sans-serif;
-    --regular: 'robotoregular', 'Roboto', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --bold: 700;
+    --medium: 500;
+    --regular: 400;
     --h1-size: 60px;
     --h2-size: 50px;
     --h3-size: 40px;

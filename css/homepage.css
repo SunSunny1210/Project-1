@@ -1,13 +1,12 @@
 html,
 body {
     background-color: var(--white-blue);
-    max-width: 1440px;
 
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: var(--regular);
+        font-family: var(--roboto);
     }
 
     h3 {
@@ -613,10 +612,19 @@ body {
     }
 
     @media screen and (min-width: 1025px) {
+        
         html,
         body {
             margin: 0 auto;
 
+            main {
+                max-width: 1440px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
             * {
                 margin: 0;
                 padding: 0;
@@ -705,7 +713,6 @@ body {
                 margin-top: 100px;
                 height: 650px;
                 padding: 0 170px;
-                position: relative;
 
                 .main-section.mobile {
                     display: none;
@@ -716,18 +723,27 @@ body {
                     height: 100%;
 
                     .main {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
                         .main-left {
                             margin-top: 109px;
                             margin-bottom: 119px;
-                            height: 422px;
-                            width: 530px;
+                            max-height: 422px;
+                            height: 100%;
+                            max-width: 530px;
+                            width: 100%;
+                            flex: 0.5;
 
                             h1 {
                                 padding: 0;
-                                font-size: var(--h1-size);
+                                font-size: clamp(1.7rem, 4vw, var(--h1-size));
                                 text-align: start;
-                                width: 530px;
-                                height: 210px;
+                                max-width: 530px;
+                                width: 100%;
+                                max-height: 210px;
+                                height: 100%;
                                 line-height: normal;
 
                             }
@@ -736,10 +752,12 @@ body {
                                 margin-top: 30px;
                                 margin-bottom: 40px;
                                 padding: 0;
-                                width: 435px;
-                                height: 90px;
+                                max-width: 435px;
+                                width: 100%;
+                                max-height: 90px;
+                                height: 100%;
                                 line-height: normal;
-                                font-size: var(--body-regular);
+                                font-size: clamp(0.9rem, 4vw, var(--body-regular));
                             }
 
                             .btns {
@@ -755,30 +773,44 @@ body {
                             }
 
                         }
-
+                        
                         .hero-img {
-                            width: 570px;
-                            top: 0;
+                            position: relative;
+                            padding: 0;
+                            max-width: 570px;
+                            width: 100%;
+                            height: 100%;
+                            flex: 0.5;
 
                             .hero {
-                                height: 637px;
+                               max-height: 637px;
+                               height: 100%;
+                               width: 100%;
+                               transform: rotate(-1.39deg);
                             }
 
                             .hero-imgs {
                                 .card-one {
-                                    height: 216px;
-                                    width: 190px;
+                                    position: absolute;
+                                    max-height: 216px;
+                                    height: 36%;
+                                    max-width: 190px;
+                                    width: 35%;
                                     top: 25px;
                                     box-shadow: var(--shadow);
                                     border-radius: 15%;
                                 }
 
                                 .card-two {
-                                    height: 193px;
-                                    width: 190px;
+                                    position: absolute;
+                                    max-height: 193px;
+                                    height: 33%;
+                                    max-width: 190px;
+                                    width: 35%;
                                     x: 1080px;
                                     y: 40px;
-                                    top: 457px;
+                                    top: 72%;
+
                                     box-shadow: var(--shadow);
                                     border-radius: 15%;
                                 }
