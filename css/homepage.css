@@ -824,7 +824,8 @@ body {
                 margin-top: 130px;
                 margin-bottom: 200px;
                 height: 96px;
-                justify-content: space-between;
+                width: 100%;
+                justify-content: center;
 
                 .logos-container {
                     margin: 0 170px;
@@ -847,6 +848,11 @@ body {
             }
 
             #projects {
+                margin-bottom: 200px;
+                padding: 0 170px;
+                max-width: 1440px;
+                width: 100%;
+                height: 561px;
 
                 button,
                 .number-text {
@@ -854,19 +860,24 @@ body {
                 }
 
                 .project-detail {
-                    margin: 0 170px 200px;
+                    height: 100%;
+                    width: 100%;
+
 
                     h3 {
                         text-align: start;
-                        width: 285px;
-                        height: 94px;
+                        max-width: 285px;
+                        width: 100%;
+                        max-height: 94px;
+                        height: 100%;
                         margin-bottom: 23px;
                     }
 
                     .slider {
                         margin: 0;
-                        height: 444px;
-                        max-width: 1100px;
+                        max-height: 444px;
+                        height: 100%;
+                        width: 100%;
                         overflow: visible;
 
                         .projects {
@@ -874,15 +885,17 @@ body {
                             margin: 0;
                             width: 100%;
                             height: 100%;
+                            gap: 40px;
 
                             .project {
                                 visibility: visible;
-                                width: 340px;
+                                max-width: 340px;
+                                max-height: 444px;
+                                width: 100%;
                                 height: 100%;
-                                flex: none;
-                                justify-content: flex-start;
                                 text-align: start;
                                 align-items: flex-start;
+                                flex: 1 1 auto;
 
                                 #info-text,
                                 a,
@@ -897,6 +910,9 @@ body {
                                 #info-text {
                                     margin-top: 10px;
                                     margin-bottom: 54px;
+                                    width: 100%;
+                                    font-size: var(--headline);
+                                    
 
                                     br {
                                         display: none;
@@ -906,10 +922,14 @@ body {
                                 a {
                                     padding: 0;
                                     font-size: var(--body-regular);
+                                    margin-bottom: 30px;
                                 }
 
                                 img {
-                                    height: 240px;
+                                    max-width: 340px;
+                                    width: 100%;
+                                    max-height: 240px;
+                                    height: 100%;
                                 }
                             }
                         }
