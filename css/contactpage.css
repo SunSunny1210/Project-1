@@ -16,82 +16,93 @@ body {
         font-family: var(--bold);
     }
 
-    .nav-bar {
-        box-sizing: border-box;
+    header {
         position: fixed;
-        width: 100vw;
-        height: 6%;
-        background: var(--white-blue) url(../logos/circle.svg) no-repeat;
-        background-position-y: center;
-        background-position-x: 4rem;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 1rem 0 1rem;
-        align-items: center;
-        z-index: 1;
+        width: 100%;
+        height: 3rem;
+        z-index: 4;
+        background-color: var(--white-blue);
+        padding: 8px;
 
-
-        .more-info {
-            background-color: var(--yellow);
-            width: 2.5rem;
-            height: 2rem;
-            border-radius: 50%;
+        .nav-bar {
+            background: var(--white-blue) url(../logos/circle.svg) no-repeat;
+            background-position-y: center;
+            background-position-x: 3rem;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
 
-            .lines {
-                width: 1.2rem;
-                height: 3px;
-                background-color: white;
-                margin: 1.7px 0;
-            }
-        }
-
-        .nav-btn {
-            box-sizing: border-box;
-            background: var(--primary-blue);
-            color: white;
-            border: var(--primary-blue);
-            font-size: 15px;
-            height: 2rem;
-            width: 6rem;
-        }
-
-        .nav-bar-menu {
-            display: flex;
-            position: absolute;
-            background-color: var(--white-blue);
-            list-style: none;
-            top: 100%;
-            left: 0;
-            width: 100vw;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 0;
-            overflow: hidden;
-            transition: height 0.3s ease;
-
-            a {
-                text-align: center;
-                color: var(--medium-blue);
-                text-decoration: none;
+            .circle {
+                display: none;
             }
 
-            a:active {
-                color: var(--primary-blue);
-            }
-        }
+            .more-info {
+                background-color: var(--yellow);
+                width: 2.5rem;
+                height: 2rem;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-        .nav-bar-menu.active {
-            height: 6rem;
+                .lines {
+                    width: 1.2rem;
+                    height: 3px;
+                    background-color: white;
+                    margin: 1.7px 0;
+                }
+            }
+
+            .nav-btn {
+                background: var(--primary-blue);
+                color: white;
+                border: var(--primary-blue);
+                font-size: 15px;
+                height: 2rem;
+                width: 6rem;
+            }
+
+            .nav-bar-menu {
+                display: flex;
+                position: absolute;
+                background-color: var(--white-blue);
+                list-style: none;
+                top: 100%;
+                left: 0;
+                width: 100vw;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 0;
+                overflow: hidden;
+                transition: height 0.3s ease;
+
+                a {
+                    text-align: center;
+                    color: var(--medium-blue);
+                    text-decoration: none;
+                }
+
+                a:active {
+                    color: var(--primary-blue);
+                }
+            }
+
+            .nav-bar-menu.active {
+                height: 6rem;
+            }
         }
     }
 
     .contact {
         padding: 5rem 1.5rem 0;
+
+        .contact-form {
+            &.desktop {
+                display: none;
+            }
+        }
 
         h1 {
             color: var(--dark-blue);
@@ -186,7 +197,7 @@ body {
 
         .contact {
             .form {
-                form{
+                form {
                     button {
                         height: 3rem;
                     }
@@ -216,18 +227,6 @@ body {
                     margin: 0;
                     padding: 0;
                     box-sizing: border-box;
-                }
-
-                h2 {
-                    font-size: var(--h2-size);
-                }
-
-                h3 {
-                    font-size: var(--h3-size);
-                }
-
-                h4 {
-                    font-size: var(--h4-size);
                 }
 
                 header {
@@ -290,13 +289,13 @@ body {
                 }
 
                 .contact {
-                    margin: 140px 170px;
-                    padding: 0;
+                    margin: 140px;
+                    padding: 0 170px;
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    
+
                     .contact-form {
                         max-width: 1100px;
                         width: 100%;
@@ -306,18 +305,78 @@ body {
                         justify-content: space-between;
                         align-items: center;
 
+                        &.mobile {
+                            display: none;
+                        }
+
+                        &.desktop {
+                            display: block;
+                        }
+
+
                         h1 {
-                            width: 100%;
                             text-align: start;
                             font-size: var(--h1-size);
                         }
 
                         .form {
+                            margin-top: 80px;
                             padding: 0;
                             max-width: 1100px;
                             width: 100%;
                             max-height: 660px;
                             height: 100%;
+
+                            form {
+                                justify-content: space-between;
+                                gap: 0;
+
+                                label {
+                                    line-height: var(--regular-height);
+                                    margin-bottom: 10px;
+                                }
+
+                                input {
+                                    height: 70px;
+                                    width: 100%;
+                                    padding-left: 20px;
+
+                                    &::placeholder {
+                                        font-size: var(--headline);
+                                    }
+                                }
+
+                                .middle {
+                                    margin: 40px 0;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    gap: 40px;
+
+                                    .email,
+                                    .phone {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        flex: 1;
+                                    }
+                                }
+
+                                textarea {
+                                    padding: 0;
+                                    padding-top: 22px;
+                                    padding-left: 20px;
+                                    height: 200px;
+
+                                    &::placeholder {
+                                        font-size: var(--headline);
+                                    }
+                                }
+
+                                button {
+                                    margin-top: 40px;
+                                    height: 80px;
+                                }
+                            }
                         }
                     }
 
