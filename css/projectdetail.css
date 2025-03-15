@@ -1,26 +1,12 @@
 html,
 body {
     background-color: var(--white-blue);
-    width: 100vw;
 
     * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
         font-family: var(--roboto);
-    }
-
-    #medium {
-        font-family: var(--medium);
-    }
-
-    #bold {
-        font-family: var(--bold);
-    }
-
-    #info-text {
-        color: var(--medium-blue);
-        font-size: 13px;
-        padding: 0 10%;
     }
 
     h3 {
@@ -33,6 +19,20 @@ body {
         color: var(--dark-blue);
         padding: 10px 0;
         font-size: 15px;
+    }
+
+    #info-text {
+        color: var(--medium-blue);
+        font-size: 13px;
+        padding: 0 10%;
+    }
+
+    #medium {
+        font-family: var(--medium);
+    }
+
+    #bold {
+        font-family: var(--bold);
     }
 
     header {
@@ -80,6 +80,10 @@ body {
                 font-size: 15px;
                 height: 2rem;
                 width: 6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
             }
 
             .nav-bar-menu {
@@ -112,7 +116,6 @@ body {
                 height: 6rem;
             }
         }
-
     }
 
     article {
@@ -170,30 +173,43 @@ body {
     }
 
     .slider {
+        margin: 2rem 0 5rem;
         position: relative;
-        width: 100vw;
         overflow: hidden;
+        width: 100%;
         display: flex;
         align-items: center;
-        margin: 2rem 0 5rem;
 
         .projects {
             margin: 0 auto;
             display: flex;
             gap: 2rem;
             transition: transform 0.5s ease-in-out;
-
+            
             .project {
+                position: relative;
+                display: flex;
+                flex: 0 0 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+
                 a {
                     background-color: white;
+                    width: 100%;
                     display: flex;
                     flex: 0 0 100%;
-                    box-shadow: var(--shadow);
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
                     position: relative;
                     text-decoration: none;
+
+                    #info-text {
+                        text-align: center;
+                        height: 100%;
+                    }
 
                     &.visible {
                         box-shadow: var(--shadow);
@@ -205,10 +221,9 @@ body {
                     }
 
                     .number-text {
-                        padding: 1rem 3.5rem;
                         position: absolute;
-                        top: 0;
-                        left: 0;
+                        top: 10px;
+                        left: 50px;
                         font-size: 0.8rem;
                         color: var(--dark-blue);
                     }
@@ -346,11 +361,11 @@ body {
                         br {
                             display: none;
                         }
-    
+
                         .learn {
                             font-size: large;
                         }
-    
+
                         img {
                             height: 11rem;
                         }
@@ -585,7 +600,7 @@ body {
                             height: 100%;
                             width: 100%;
                             overflow: visible;
-                            
+
                             .projects {
                                 transition: none;
                                 margin: 0;
@@ -595,8 +610,8 @@ body {
 
                                 .project {
                                     flex: 1;
-                                    
-                                    a{
+
+                                    a {
                                         visibility: visible;
                                         max-width: 340px;
                                         width: 100%;
@@ -604,40 +619,40 @@ body {
                                         height: 100%;
                                         align-items: flex-start;
                                         flex: 1;
-    
+
                                         &.visible,
                                         &.hidden {
                                             width: 100%;
                                             height: 100%;
                                         }
-    
+
                                         #info-text,
                                         .learn,
                                         .tiny-title {
                                             margin-left: 30px;
                                         }
-    
+
                                         .tiny-title {
                                             margin-top: 30px;
                                         }
-    
+
                                         #info-text {
                                             margin-top: 10px;
                                             margin-bottom: 54px;
                                             font-size: var(--headline);
-    
-    
+
+
                                             br {
                                                 display: none;
                                             }
                                         }
-    
+
                                         .learn {
                                             padding: 0;
                                             font-size: var(--body-regular);
                                             margin-bottom: 30px;
                                         }
-    
+
                                         img {
                                             max-width: 340px;
                                             width: 100%;

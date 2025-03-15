@@ -80,6 +80,10 @@ body {
                 font-size: 15px;
                 height: 2rem;
                 width: 6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
             }
 
             .nav-bar-menu {
@@ -124,15 +128,16 @@ body {
         }
 
         .main {
+            height: 18rem;
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
 
             .hero-img {
-                padding-right: 1rem;
+                margin-right: 1rem;
                 display: flex;
-                flex-direction: column;
+                align-items: center;
                 position: relative;
-                height: 80%;
 
                 .hero {
                     height: 200px;
@@ -159,8 +164,6 @@ body {
                         height: 55px;
                         bottom: 0;
                         right: 0;
-
-
                     }
                 }
             }
@@ -211,40 +214,60 @@ body {
     .logos {
         filter: grayscale(100%);
         height: 15px;
-        display: flex;
-        justify-content: space-evenly;
+        width: 100%;
         margin: 3rem 0;
 
-        .logo {
-            height: 15px;
+        .logos-container {
+            padding: 0 1rem;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .logo {
+                height: 15px;
+            }
         }
     }
 
     .slider {
+        margin: 2rem 0 5rem;
         position: relative;
-        width: 100vw;
         overflow: hidden;
+        width: 100%;
         display: flex;
         align-items: center;
-        margin: 2rem 0 5rem;
 
         .projects {
             margin: 0 auto;
             display: flex;
             gap: 2rem;
             transition: transform 0.5s ease-in-out;
-
+            
             .project {
+                position: relative;
+                display: flex;
+                flex: 0 0 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+
                 a {
                     background-color: white;
+                    width: 100%;
                     display: flex;
                     flex: 0 0 100%;
-                    box-shadow: var(--shadow);
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
                     position: relative;
                     text-decoration: none;
+
+                    #info-text {
+                        text-align: center;
+                        height: 100%;
+                    }
 
                     &.visible {
                         box-shadow: var(--shadow);
@@ -256,10 +279,9 @@ body {
                     }
 
                     .number-text {
-                        padding: 1rem 3.5rem;
                         position: absolute;
-                        top: 0;
-                        left: 0;
+                        top: 10px;
+                        left: 50px;
                         font-size: 0.8rem;
                         color: var(--dark-blue);
                     }
@@ -525,11 +547,16 @@ body {
                 font-size: 1.7rem;
             }
 
-            .main-info {
-                font-size: 1.4rem;
-                line-height: 45px;
-                padding-bottom: 2rem;
+            .main {
+                justify-content: center;
+
+                .main-info {
+                    font-size: 1.4rem;
+                    line-height: 45px;
+                    padding-bottom: 2rem;
+                }
             }
+
 
             .btns {
 
@@ -571,7 +598,7 @@ body {
                 }
 
                 .number-text {
-                    padding-left: 1.5rem;
+                    left: 10px;
                 }
             }
         }
@@ -727,6 +754,7 @@ body {
                 #main {
                     margin-top: 100px;
                     height: 650px;
+                    width: 100%;
                     padding: 0 170px;
 
                     .main-section.mobile {
@@ -735,12 +763,16 @@ body {
 
                     .main-section.desktop {
                         display: block;
+                        width: 100%;
                         height: 100%;
 
                         .main {
+                            width: 100%;
+                            height: 100%;
                             display: flex;
-                            justify-content: center;
+                            justify-content: space-between;
                             align-items: center;
+                            gap: 0;
 
                             .main-left {
                                 margin-top: 109px;
@@ -797,11 +829,11 @@ body {
 
                             .hero-img {
                                 position: relative;
-                                padding: 0;
+                                margin: 0;
                                 max-width: 570px;
                                 width: 100%;
                                 height: 100%;
-                                flex: 0.5;
+                                flex: 0.7;
 
                                 .hero {
                                     max-height: 637px;
@@ -847,7 +879,7 @@ body {
                     justify-content: center;
 
                     .logos-container {
-                        margin: 0 170px;
+                        padding: 0 170px;
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
@@ -940,11 +972,7 @@ body {
                                             margin-top: 10px;
                                             margin-bottom: 54px;
                                             font-size: var(--headline);
-
-
-                                            br {
-                                                display: none;
-                                            }
+                                            max-height: 26px;
                                         }
 
                                         .learn {
