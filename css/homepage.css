@@ -908,6 +908,7 @@ body {
                                 justify-content: space-between;
 
                                 .project {
+                                    flex: 1;
 
                                     a {
                                         visibility: visible;

@@ -476,9 +476,14 @@ body {
                         }
 
                         .nav-btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             height: 52px;
                             width: 150px;
                             font-size: var(--headline);
+                            line-height: var(--medium-height);
+                            text-decoration: none;
                         }
 
                     }
@@ -574,7 +579,7 @@ body {
                             height: 100%;
                             width: 100%;
                             overflow: visible;
-
+                            
                             .projects {
                                 transition: none;
                                 margin: 0;
@@ -583,6 +588,8 @@ body {
                                 gap: 40px;
 
                                 .project {
+                                    flex: 1;
+                                    
                                     a{
                                         visibility: visible;
                                         max-width: 340px;
