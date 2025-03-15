@@ -232,8 +232,10 @@ body {
                 header {
                     height: 122px;
                     width: 100%;
-                    padding: 70px 170.64px 0;
+                    padding: 70px 170px 0 170.64px;
                     position: static;
+                    display: flex;
+                    justify-content: center;  
 
                     .nav-bar {
                         height: 52px;
