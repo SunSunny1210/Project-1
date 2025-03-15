@@ -235,47 +235,49 @@ body {
             transition: transform 0.5s ease-in-out;
 
             .project {
-                background-color: white;
-                display: flex;
-                flex: 0 0 100%;
-                box-shadow: var(--shadow);
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                position: relative;
-
-                &.visible {
-                    box-shadow: var(--shadow);
-                    visibility: visible;
-                }
-
-                &.hidden {
-                    visibility: hidden;
-                }
-
-                .number-text {
-                    padding: 1rem 3.5rem;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    font-size: 0.8rem;
-                    color: var(--dark-blue);
-                }
-
                 a {
-                    padding: 15px 0;
+                    background-color: white;
+                    display: flex;
+                    flex: 0 0 100%;
+                    box-shadow: var(--shadow);
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
                     text-decoration: none;
-                    color: var(--primary-blue);
-                    font-size: 13px;
-                }
-
-                a:active {
-                    color: var(--medium-blue);
-                }
-
-                img {
-                    height: 9rem;
-                    width: 100%;
+    
+                    &.visible {
+                        box-shadow: var(--shadow);
+                        visibility: visible;
+                    }
+    
+                    &.hidden {
+                        visibility: hidden;
+                    }
+    
+                    .number-text {
+                        padding: 1rem 3.5rem;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 0.8rem;
+                        color: var(--dark-blue);
+                    }
+    
+                    .learn {
+                        padding: 15px 0;
+                        color: var(--primary-blue);
+                        font-size: 13px;
+                    }
+    
+                    .learn:active {
+                        color: var(--medium-blue);
+                    }
+    
+                    img {
+                        height: 9rem;
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -553,16 +555,18 @@ body {
                 height: 20rem;
 
                 .project {
-                    br {
-                        display: none;
-                    }
-
                     a {
-                        font-size: large;
-                    }
-
-                    img {
-                        height: 11rem;
+                        br {
+                            display: none;
+                        }
+    
+                        .learn {
+                            font-size: large;
+                        }
+    
+                        img {
+                            height: 11rem;
+                        }
                     }
                 }
 
@@ -891,52 +895,54 @@ body {
                                 gap: 40px;
 
                                 .project {
-                                    visibility: visible;
-                                    max-width: 340px;
-                                    width: 100%;
-                                    max-height: 444px;
-                                    height: 100%;
-                                    align-items: flex-start;
-                                    flex: 1;
-
-                                    &.visible,
-                                    &.hidden {
-                                        width: 100%;
-                                        height: 100%;
-                                    }
-
-                                    #info-text,
-                                    a,
-                                    .tiny-title {
-                                        margin-left: 30px;
-                                    }
-
-                                    .tiny-title {
-                                        margin-top: 30px;
-                                    }
-
-                                    #info-text {
-                                        margin-top: 10px;
-                                        margin-bottom: 54px;
-                                        font-size: var(--headline);
-
-
-                                        br {
-                                            display: none;
-                                        }
-                                    }
-
-                                    a {
-                                        padding: 0;
-                                        font-size: var(--body-regular);
-                                        margin-bottom: 30px;
-                                    }
-
-                                    img {
+                                    a{
+                                        visibility: visible;
                                         max-width: 340px;
                                         width: 100%;
-                                        max-height: 240px;
+                                        max-height: 444px;
                                         height: 100%;
+                                        align-items: flex-start;
+                                        flex: 1;
+    
+                                        &.visible,
+                                        &.hidden {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+    
+                                        #info-text,
+                                        .learn,
+                                        .tiny-title {
+                                            margin-left: 30px;
+                                        }
+    
+                                        .tiny-title {
+                                            margin-top: 30px;
+                                        }
+    
+                                        #info-text {
+                                            margin-top: 10px;
+                                            margin-bottom: 54px;
+                                            font-size: var(--headline);
+    
+    
+                                            br {
+                                                display: none;
+                                            }
+                                        }
+    
+                                        .learn {
+                                            padding: 0;
+                                            font-size: var(--body-regular);
+                                            margin-bottom: 30px;
+                                        }
+    
+                                        img {
+                                            max-width: 340px;
+                                            width: 100%;
+                                            max-height: 240px;
+                                            height: 100%;
+                                        }
                                     }
                                 }
                             }
