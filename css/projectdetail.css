@@ -14,8 +14,7 @@ body {
     }
 
     #bold {
-        font-family: var(--bold)
-        ;
+        font-family: var(--bold);
     }
 
     #info-text {
@@ -112,7 +111,7 @@ body {
 
     article {
         padding-top: 5rem;
-        
+
         .titles {
             padding-left: 1.5rem;
 
@@ -131,7 +130,7 @@ body {
             padding: 0 0 1rem 1.5rem;
             font-size: 12px;
             color: var(--dark-blue);
-            
+
             span {
                 color: var(--medium-blue);
             }
@@ -146,7 +145,7 @@ body {
                 position: relative;
                 z-index: 2;
             }
-    
+
             .blur {
                 position: absolute;
                 top: 0;
@@ -171,47 +170,57 @@ body {
         display: flex;
         align-items: center;
         margin: 2rem 0 5rem;
-        
+
         .projects {
             margin: 0 auto;
             display: flex;
             gap: 2rem;
             transition: transform 0.5s ease-in-out;
-            
+
             .project {
-                background-color: white;
-                box-sizing: border-box;
-                box-shadow: var(--shadow);
-                display: flex;
-                flex: 0 0 100%;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                position: relative;
-
-                .number-text {
-                    padding: 1rem 3.5rem;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    font-size: 0.8rem;
-                    color: var(--dark-blue);
-                }
-                
                 a {
-                    padding: 15px 0;
+                    background-color: white;
+                    display: flex;
+                    flex: 0 0 100%;
+                    box-shadow: var(--shadow);
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
                     text-decoration: none;
-                    color: var(--primary-blue);
-                    font-size: 13px;
-                }
-
-                a:active {
-                    color: var(--medium-blue);
-                }
-
-                img {
-                    height: 9rem;
-                    width: 100%;
+    
+                    &.visible {
+                        box-shadow: var(--shadow);
+                        visibility: visible;
+                    }
+    
+                    &.hidden {
+                        visibility: hidden;
+                    }
+    
+                    .number-text {
+                        padding: 1rem 3.5rem;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 0.8rem;
+                        color: var(--dark-blue);
+                    }
+    
+                    .learn {
+                        padding: 15px 0;
+                        color: var(--primary-blue);
+                        font-size: 13px;
+                    }
+    
+                    .learn:active {
+                        color: var(--medium-blue);
+                    }
+    
+                    img {
+                        height: 9rem;
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -226,11 +235,11 @@ body {
             width: 2.5rem;
             z-index: 2;
         }
-        
+
         .prev {
             left: 0;
         }
-        
+
         .next {
             right: 0;
         }
@@ -248,11 +257,11 @@ body {
                 align-items: center;
                 height: 15rem;
                 color: var(--dark-blue);
-    
+
                 h3 {
                     font-size: 1.5rem;
                 }
-    
+
                 form {
                     input {
                         height: 40px;
@@ -263,7 +272,7 @@ body {
                         background-position-y: center;
                         background-position-x: 10px;
                     }
-    
+
                     button {
                         background: var(--primary-blue);
                         color: white;
@@ -277,7 +286,7 @@ body {
             }
         }
     }
-    
+
     footer {
         padding: 5rem 1rem 2rem;
         color: var(--medium-blue);
@@ -299,11 +308,12 @@ body {
                 flex-direction: column;
                 justify-content: space-evenly;
                 gap: 1rem;
-                a{
+
+                a {
                     text-decoration: none;
                     color: var(--medium-blue);
                 }
-    
+
                 a:active {
                     color: var(--primary-blue);
                 }
@@ -320,9 +330,26 @@ body {
             button {
                 width: 20%;
             }
-            
+
             .projects {
                 width: 60%;
+                height: 20rem;
+
+                .project {
+                    a {
+                        br {
+                            display: none;
+                        }
+    
+                        .learn {
+                            font-size: large;
+                        }
+    
+                        img {
+                            height: 11rem;
+                        }
+                    }
+                }
 
                 .number-text {
                     padding-left: 1.5rem;
@@ -356,6 +383,7 @@ body {
     }
 
     @media screen and (min-width: 1025px) {
+
         html,
         body {
             margin: 0 auto;
@@ -376,37 +404,37 @@ body {
                     padding: 0;
                     box-sizing: border-box;
                 }
-    
+
                 h2 {
                     font-size: var(--h2-size);
                 }
-    
+
                 h3 {
                     font-size: var(--h3-size);
                 }
-    
+
                 h4 {
                     font-size: var(--h4-size);
                 }
-    
+
                 .tiny-title {
                     font-size: var(--body-medium);
                     line-height: var(--medium-height);
                     padding: 0;
                 }
-    
+
                 #info-text {
                     font-size: var(--headline);
                     line-height: var(--regular-height);
                     padding: 0;
                 }
-    
+
                 header {
                     height: 122px;
                     width: 100%;
                     padding: 70px 170.64px 0;
                     position: static;
-    
+
                     .nav-bar {
                         position: static;
                         height: 52px;
@@ -416,7 +444,7 @@ body {
                         background-image: none;
                         display: flex;
                         justify-content: space-between;
-    
+
                         .nav-bar-menu {
                             position: static;
                             width: 295px;
@@ -426,65 +454,65 @@ body {
                             gap: 60px;
                             flex-direction: row;
                             align-items: center;
-    
+
                             li {
                                 font-size: var(--headline);
-    
+
                                 a:hover {
                                     color: var(--primary-blue);
                                 }
                             }
-    
+
                         }
-    
+
                         .circle {
                             display: block;
                             height: 18.46px;
                             width: 60.53px;
                         }
-    
+
                         .more-info {
                             display: none;
                         }
-    
+
                         .nav-btn {
                             height: 52px;
                             width: 150px;
                             font-size: var(--headline);
                         }
-    
+
                     }
                 }
-    
+
                 .article {
                     margin-top: 140px;
                     padding: 0 170px;
                     width: 100%;
-                    
+
                     article {
                         .header {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-    
+
                             .titles {
                                 padding: 0;
                                 margin-bottom: 80px;
                                 width: 530px;
-            
+
                                 h1 {
                                     font-size: var(--h1-size);
                                     margin-bottom: 20px;
                                     height: 70px;
                                 }
-            
+
                                 p {
                                     padding: 0;
                                     font-size: var(--headline);
                                     height: 28px;
                                 }
                             }
-            
+
                             .date {
                                 padding: 0;
                                 font-size: var(--body-regular);
@@ -492,16 +520,16 @@ body {
                                 height: 30px;
                             }
                         }
-    
+
                         .images {
                             max-width: 1100px;
                             width: 100%;
-    
+
                             img {
                                 width: 100%;
                                 height: 444px;
                             }
-    
+
                             .blur {
                                 filter: blur(40px);
                             }
@@ -517,7 +545,6 @@ body {
                 }
 
                 #projects {
-                    margin-top: 70px;
                     margin-bottom: 200px;
                     width: 100%;
                     height: 561px;
@@ -539,7 +566,7 @@ body {
 
                         h3 {
                             text-align: start;
-                            margin-bottom: 23px;
+                            margin-bottom: 70px;
                         }
 
                         .slider {
@@ -556,52 +583,54 @@ body {
                                 gap: 40px;
 
                                 .project {
-                                    visibility: visible;
-                                    max-width: 340px;
-                                    width: 100%;
-                                    max-height: 444px;
-                                    height: 100%;
-                                    align-items: flex-start;
-                                    flex: 1;
-
-                                    &.visible,
-                                    &.hidden {
-                                        width: 100%;
-                                        height: 100%;
-                                    }
-
-                                    #info-text,
-                                    a,
-                                    .tiny-title {
-                                        margin-left: 30px;
-                                    }
-
-                                    .tiny-title {
-                                        margin-top: 30px;
-                                    }
-
-                                    #info-text {
-                                        margin-top: 10px;
-                                        margin-bottom: 54px;
-                                        font-size: var(--headline);
-
-
-                                        br {
-                                            display: none;
-                                        }
-                                    }
-
-                                    a {
-                                        padding: 0;
-                                        font-size: var(--body-regular);
-                                        margin-bottom: 30px;
-                                    }
-
-                                    img {
+                                    a{
+                                        visibility: visible;
                                         max-width: 340px;
                                         width: 100%;
-                                        max-height: 240px;
+                                        max-height: 444px;
                                         height: 100%;
+                                        align-items: flex-start;
+                                        flex: 1;
+    
+                                        &.visible,
+                                        &.hidden {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+    
+                                        #info-text,
+                                        .learn,
+                                        .tiny-title {
+                                            margin-left: 30px;
+                                        }
+    
+                                        .tiny-title {
+                                            margin-top: 30px;
+                                        }
+    
+                                        #info-text {
+                                            margin-top: 10px;
+                                            margin-bottom: 54px;
+                                            font-size: var(--headline);
+    
+    
+                                            br {
+                                                display: none;
+                                            }
+                                        }
+    
+                                        .learn {
+                                            padding: 0;
+                                            font-size: var(--body-regular);
+                                            margin-bottom: 30px;
+                                        }
+    
+                                        img {
+                                            max-width: 340px;
+                                            width: 100%;
+                                            max-height: 240px;
+                                            height: 100%;
+                                        }
                                     }
                                 }
                             }
@@ -610,14 +639,14 @@ body {
                 }
 
                 #questions {
-                    margin: 136px 0 170px;
+                    margin-bottom: 170px;
                     padding: 0 60px;
                     height: 500px;
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    
+
                     .questions-info {
                         max-width: 1320px;
                         width: 100%;
@@ -625,7 +654,7 @@ body {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        
+
 
                         .questions {
                             height: 227px;
@@ -671,7 +700,6 @@ body {
                 }
 
                 footer {
-                    margin-top: 170px;
                     padding: 0 170px;
                     width: 100%;
                     height: 242px;
