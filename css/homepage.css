@@ -411,40 +411,42 @@ body {
     }
 
     #questions {
-        background-color: var(--yellow);
+        .questions-info {
+            background-color: var(--yellow);
 
-        .questions {
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            height: 15rem;
-            color: var(--dark-blue);
-
-            h3 {
-                font-size: 1.5rem;
-            }
-
-            form {
-                input {
-                    height: 40px;
-                    width: 200px;
-                    border: white;
-                    padding-left: 45px;
-                    background: white url(../newsletter/icon/mail.svg) no-repeat;
-                    background-position-y: center;
-                    background-position-x: 10px;
+            .questions {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 15rem;
+                color: var(--dark-blue);
+    
+                h3 {
+                    font-size: 1.5rem;
                 }
-
-                button {
-                    background: var(--primary-blue);
-                    color: white;
-                    border: var(--primary-blue);
-                    font-size: 15px;
-                    line-height: 130%;
-                    height: 40px;
-                    width: 90px;
+    
+                form {
+                    input {
+                        height: 40px;
+                        width: 200px;
+                        border: white;
+                        padding-left: 45px;
+                        background: white url(../newsletter/icon/mail.svg) no-repeat;
+                        background-position-y: center;
+                        background-position-x: 10px;
+                    }
+    
+                    button {
+                        background: var(--primary-blue);
+                        color: white;
+                        border: var(--primary-blue);
+                        font-size: 15px;
+                        line-height: 130%;
+                        height: 40px;
+                        width: 90px;
+                    }
                 }
             }
         }
@@ -761,7 +763,7 @@ body {
                                     max-height: 90px;
                                     height: 100%;
                                     line-height: normal;
-                                    font-size: clamp(0.9rem, 4vw, var(--body-regular));
+                                    font-size: var(--body-regular);
                                 }
 
                                 .btns {
@@ -852,10 +854,12 @@ body {
 
                 #projects {
                     margin-bottom: 200px;
-                    padding: 0 170px;
                     max-width: 1440px;
                     width: 100%;
                     height: 561px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     button,
                     .number-text {
@@ -863,7 +867,9 @@ body {
                     }
 
                     .project-detail {
+                        margin: 0 2rem;
                         height: 100%;
+                        max-width: 1100px;
                         width: 100%;
 
 
@@ -877,7 +883,6 @@ body {
                         }
 
                         .slider {
-                            margin: 0;
                             max-height: 444px;
                             height: 100%;
                             width: 100%;
@@ -889,16 +894,23 @@ body {
                                 width: 100%;
                                 height: 100%;
                                 gap: 40px;
+                                justify-content: flex-start;
+                                align-items: center;
 
                                 .project {
                                     visibility: visible;
                                     max-width: 340px;
-                                    max-height: 444px;
                                     width: 100%;
+                                    max-height: 444px;
                                     height: 100%;
                                     text-align: start;
                                     align-items: flex-start;
-                                    flex: 1 1 auto;
+
+                                    &.visible,
+                                    &.hidden {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
 
                                     #info-text,
                                     a,
@@ -914,7 +926,7 @@ body {
                                         margin-top: 10px;
                                         margin-bottom: 54px;
                                         width: 100%;
-                                        font-size: clamp(10px, 1.1vw, var(--headline));
+                                        font-size: var(--headline);
 
 
                                         br {
@@ -946,6 +958,7 @@ body {
                     width: 100%;
 
                     .clients {
+                        height: 100%;
                         width: 100%;
 
                         .dark-background {
@@ -956,11 +969,11 @@ body {
                             align-items: center;
 
                             .clients-info {
+                                max-width: 1100px;
                                 width: 100%;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
-                                margin: 120px 349px 120px 350px;
                                 gap: 105px;
 
                                 h3 {
@@ -1022,65 +1035,96 @@ body {
                 }
 
                 #services {
-                    padding: 0 170px 64px;
+                    padding: 0;
                     margin-top: 200px;
+                    margin-bottom: 64px;
+                    height: 497px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
-                    h3 {
-                        text-align: start;
-                        margin-bottom: 70px;
-                    }
-
-                    .services {
-                        padding: 0;
-                        flex-direction: row;
-                        gap: 40px;
-
-                        .service {
-                            padding: 40px 30px 30px;
-                            height: 380px;
-                            width: 340px;
-                            align-items: flex-start;
-                            justify-content: center;
-
-                            a {
-                                padding: 0;
-                                font-size: var(--headline);
-                            }
-
-                            #info-text {
-                                height: 90px;
-                                width: 280px;
-                                font-size: var(--body-regular);
-                                margin-top: 20px;
-                                margin-bottom: 36px;
-                            }
-
-                            .serv-logo {
-                                margin-bottom: 30px;
-                                height: 80px;
-                                width: 80px;
-                                background-color: var(--light-blue);
-                                border-radius: 50%;
-                                display: flex;
+                    .serv-section {
+                        height: 100%;
+                        margin: 0 2rem;
+                        h3 {
+                            text-align: start;
+                            margin-bottom: 70px;
+                        }
+    
+                        .services {
+                            padding: 0;
+                            max-height: 380px;
+                            height: 100%;
+                            max-width: 1100px;
+                            width: 100%;
+                            flex-direction: row;
+                            gap: 40px;
+    
+                            .service {
+                                padding: 40px 30px 30px;
+                                max-height: 380px;
+                                height: 100%;
+                                max-width: 340px;
+                                width: 100%;
+                                align-items: flex-start;
                                 justify-content: center;
-                                align-items: center;
-
-                                img {
-                                    height: 40px;
-                                    width: 40px;
+    
+                                a {
+                                    margin-top: 36px;
+                                    padding: 0;
+                                    font-size: var(--headline);
                                 }
+    
+                                .tiny-title {
+                                    font-size: clamp(20px, 2vw, var(--body-medium));
+                                }
+    
+                                #info-text {
+                                    max-height: 90px;
+                                    max-width: 280px;
+                                    font-size: clamp(17px, 1.1vw, var(--body-regular));
+                                    line-height: var(--regular-height);
+                                    margin-top: 20px;
+                                }
+    
+                                .serv-logo {
+                                    margin-bottom: 30px;
+                                    height: 80px;
+                                    width: 80px;
+                                    background-color: var(--light-blue);
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+    
+                                    img {
+                                        height: 40px;
+                                        width: 40px;
+                                    }
+                                }
+    
                             }
-
                         }
                     }
                 }
 
                 #questions {
-                    margin: 0 60px;
-                    padding: 136px 110px 137px;
+                    margin: 136px 0 170px;
+                    padding: 0 60px;
                     height: 500px;
-
+                    width: 100%;
+                    
+                    
                     .questions-info {
+                        max-width: 1100px;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+
                         .questions {
                             height: 227px;
                             width: 1100px;
@@ -1092,8 +1136,8 @@ body {
 
                             p {
                                 font-size: var(--body-regular);
-                                margin-bottom: 50px;
                                 margin-top: 20px;
+                                margin-bottom: 50px;
                             }
 
                             form {
