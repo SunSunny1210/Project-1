@@ -5,7 +5,26 @@ body {
     * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
         font-family: var(--roboto);
+    }
+
+    h3 {
+        text-align: center;
+        color: var(--dark-blue);
+    }
+
+    .tiny-title {
+        text-align: center;
+        color: var(--dark-blue);
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    #info-text {
+        color: var(--medium-blue);
+        font-size: 13px;
+        padding: 0 10%;
     }
 
     #medium {
@@ -61,6 +80,10 @@ body {
                 font-size: 15px;
                 height: 2rem;
                 width: 6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
             }
 
             .nav-bar-menu {
@@ -162,6 +185,7 @@ body {
 
         address {
             padding: 1rem 0;
+            font-style: normal;
         }
 
         .links {
@@ -232,10 +256,12 @@ body {
                 header {
                     height: 122px;
                     width: 100%;
-                    padding: 70px 170px 0 170.64px;
-                    position: static;
+                    padding-left: 170.64px;
+                    padding-right: 170px;
                     display: flex;
-                    justify-content: center;  
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    position: static; 
 
                     .nav-bar {
                         height: 52px;

@@ -223,7 +223,7 @@ body {
                     .number-text {
                         position: absolute;
                         top: 10px;
-                        left: 50px;
+                        left: 10px;
                         font-size: 0.8rem;
                         color: var(--dark-blue);
                     }
@@ -239,7 +239,8 @@ body {
                     }
 
                     img {
-                        height: 9rem;
+                        max-height: 9rem;
+                        height: 100%;
                         width: 100%;
                     }
                 }
@@ -247,13 +248,12 @@ body {
         }
 
         button {
-            position: absolute;
             background-color: var(--white-blue);
             color: var(--dark-blue);
             border: none;
             cursor: pointer;
-            height: 100%;
-            width: 2.5rem;
+            height: 259px;
+            width: 6rem;
             z-index: 2;
         }
 
@@ -314,6 +314,7 @@ body {
 
         address {
             padding: 1rem 0;
+            font-style: normal;
         }
 
         .links {
@@ -345,6 +346,25 @@ body {
     @media screen and (min-width: 700px) and (max-width: 1024px) {
         .nav-bar {
             height: 4rem;
+        }
+
+        .article {
+            article {
+                .images {
+                    padding: 0 1.5rem;
+                    height: 15rem;
+                    width: 100%;
+
+                    .blur {
+                        padding: 0 1.5rem;
+                    }
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
         }
 
         #projects {
@@ -453,7 +473,11 @@ body {
                 header {
                     height: 122px;
                     width: 100%;
-                    padding: 70px 170.64px 0;
+                    padding-left: 170.64px;
+                    padding-right: 170px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-end;
                     position: static;
 
                     .nav-bar {
@@ -541,9 +565,12 @@ body {
 
                             .date {
                                 padding: 0;
-                                font-size: var(--body-regular);
-                                line-height: var(--regular-height);
                                 height: 30px;
+                                max-width: 255px;
+                                width: 100%;
+                                font-size: clamp(17px, 1.4vw, var(--body-regular));
+                                text-align: end;
+                                line-height: var(--regular-height);
                             }
                         }
 
@@ -596,6 +623,7 @@ body {
                         }
 
                         .slider {
+                            margin: 0;
                             max-height: 444px;
                             height: 100%;
                             width: 100%;
@@ -607,6 +635,7 @@ body {
                                 width: 100%;
                                 height: 100%;
                                 gap: 40px;
+                                justify-content: space-between;
 
                                 .project {
                                     flex: 1;
@@ -614,7 +643,6 @@ body {
                                     a {
                                         visibility: visible;
                                         max-width: 340px;
-                                        width: 100%;
                                         max-height: 444px;
                                         height: 100%;
                                         align-items: flex-start;
@@ -622,7 +650,9 @@ body {
 
                                         &.visible,
                                         &.hidden {
+                                            max-width: 340px;
                                             width: 100%;
+                                            max-height: 444px;
                                             height: 100%;
                                         }
 
@@ -640,11 +670,7 @@ body {
                                             margin-top: 10px;
                                             margin-bottom: 54px;
                                             font-size: var(--headline);
-
-
-                                            br {
-                                                display: none;
-                                            }
+                                            max-height: 26px;
                                         }
 
                                         .learn {
@@ -757,7 +783,6 @@ body {
                             address {
                                 padding: 0;
                                 font-size: var(--headline);
-                                font-style: normal;
                                 line-height: var(--regular-height);
                                 height: 52px;
                             }
