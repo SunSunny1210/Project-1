@@ -78,7 +78,7 @@ body {
             }
 
             .nav-btn {
-                margin-left: 50vw;
+                margin-left: 35vw;
                 height: 2.5rem;
                 width: 6rem;
                 background: var(--primary-blue);
@@ -121,7 +121,6 @@ body {
                 height: 6rem;
             }
         }
-
     }
 
     article {

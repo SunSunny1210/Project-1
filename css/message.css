@@ -1,12 +1,12 @@
 .sub-message {
     visibility: hidden;
     box-sizing: border-box;
-    padding: 6vw;
+    padding: 3.5rem 4rem;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 50%;
+    height: 60%;
     width: 70%;
     background-color: var(--white-blue);
     z-index: 5;
@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    box-shadow: 0 0 0 200px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 400px rgba(0,0,0,0.5);
     opacity: 0;
     transition: visibility 0.3s, opacity 0.3s ease-in-out;
     
@@ -33,13 +33,13 @@
     }
 
     .your-email {
-        font-size: var(--h3-size);
+        font-size: 2.2rem;
         font-weight: var(--bold);
         color: var(--dark-blue);
     }
 
     .soon {
-        font-size: var(--body-medium);
+        font-size: 1.3rem;
         color: var(--medium-blue);
     }
 
@@ -50,5 +50,31 @@
         border: none;
         color: white;
         font-size: var(--headline);
+    }
+
+    @media screen and (max-width: 699px) {
+        height: 45%;
+        width: 100%;
+        padding: 3rem;
+
+        .your-email {
+            font-size: 1.5rem;
+        }
+
+        .soon {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (min-width: 700px) and (max-width: 1024px) {
+        height: 50%;
+
+        .your-email {
+            font-size: 2rem;
+        }
+
+        .soon {
+            font-size: 1rem;
+        }
     }
 }

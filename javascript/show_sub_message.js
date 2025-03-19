@@ -1,9 +1,10 @@
 const message = document.querySelector('.sub-message');
 
-function showMessage() {
+function showMessageQ() {
     const email = document.querySelector('.questions input');
-     if (email != null) {
-         document.querySelector('.questions button').onclick = function(event) {
+
+    if (email != null) {
+        document.querySelector('.questions button').onclick = function (event) {
             event.preventDefault();
 
             const inputValue = email.value.trim();
@@ -23,14 +24,14 @@ function showMessage() {
 function closeMessage() {
     const close = document.querySelector('.sub-message .x');
     const closeBtn = document.querySelector('.sub-message button');
-    close.onclick = function() {
+    close.onclick = function () {
         message.classList.remove('visible');
     }
 
-    closeBtn.onclick = function() {
+    closeBtn.onclick = function () {
         message.classList.remove('visible');
     }
 }
 
-showMessage()
-closeMessage()
+showMessageQ();
+closeMessage();
