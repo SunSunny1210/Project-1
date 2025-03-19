@@ -4,14 +4,6 @@ const projectSlides = document.querySelectorAll('.project');
 const totalSlides = projectSlides.length;
 const projectImg = document.querySelectorAll('.project-img');
 
-projectSlides.forEach((el, i) => {
-    if (i === currentIndex) {
-        el.classList.add('visible');
-    } else {
-        el.classList.add('hidden');
-    }
-});
-
 document.querySelector('.prev').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
     updateSlider();
@@ -25,9 +17,9 @@ document.querySelector('.next').addEventListener('click', () => {
 function updateSlider() {
     projectSlides.forEach((el, i) => {
         if (i === currentIndex) {
-            el.style.visibility = 'visible';
+            el.classList.add('visible');
         } else {
-            el.style.visibility = 'hidden';
+            el.classList.add('hidden');
         }
     });
     
