@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sun's Project 1</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contactpage.css" />
+    <link rel="stylesheet" href="./css/message.css"/>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="nav-bar">
+                <div class="more-info">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </div>
+                <a href="homepage.html">
+                    <img class="circle" src="./logos/circle.svg" />
+                </a>
+                <nav>
+                    <menu class="nav-bar-menu" id="medium">
+                        <li><a href="./homepage.html">Home</a></li>
+                        <li><a href="./homepage.html#projects">Projects</a></li>
+                        <li><a href="./homepage.html#services">Services</a></li>
+                    </menu>
+                </nav>
+                <a class="nav-btn" id="medium" href="contactpage.html">Contact Us</a>
+            </div>
+        </header>
+
+        <section class="contact">
+            <div class="contact-form mobile">
+                <h1 id="bold">Contact Us</h1>
+                <div class="form">
+                    <form>
+                        <label for="name">Full Name *</label>
+                        <input id="name" type="text" placeholder="Enter your full name" />
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Enter your email adress" />
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="tel" placeholder="Enter your phone number" />
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-form desktop">
+                <h1 id="bold">Contact Us</h1>
+                <div class="form">
+                    <form>
+                        <label for="name">Full Name *</label>
+                        <input id="name" type="text" placeholder="Enter your full name" />
+                        <div class="middle">
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" placeholder="Enter your email adress" />
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Phone</label>
+                                <input id="phone" type="tel" placeholder="Enter your phone number" />
+                            </div>
+                        </div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="sub-message">
+            <div class="x">x</div>
+            <div class="your-email">Your personal data has been successfully saved!</div>
+            <div class="soon">We will contact you soon. Make sure to check your inbox regularly to not miss it.</div>
+            <button>Got it!</button>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="address">
+                    <a href="homepage.html">
+                        <img class="circle" src="./logos/circle.svg" />
+                    </a>
+                    <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
+                </div>
+                <div class="links">
+                    <div class="link">
+                        <a href="">Team</a>
+                        <a href="#press">Press</a>
+                    </div>
+                    <div class="link">
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div class="link">
+                        <a href="">About Us</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<script src="./javascript/more_info_tab.js"></script>
+<script src="./javascript/show_form_message.js"></script>
+
+</html>
