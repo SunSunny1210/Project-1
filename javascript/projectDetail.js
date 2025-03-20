@@ -32,7 +32,7 @@ const _loadProject = (project) => {
     document.querySelector('.titles p').innerText = project.description;
     document.querySelector('.date span').innerText = project.completed_on;
     document.querySelector('.images img').src = project.image;
-    document.querySelector('.text').innerText = project.content;
+    document.querySelector('.text').innerHTML = project.content;
 }
 
 window.onload = async () => {
