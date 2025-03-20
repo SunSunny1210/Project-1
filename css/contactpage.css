@@ -240,13 +240,24 @@ body {
 
         .contact {
             margin-bottom: 3rem;
-            .form {
-                form {
-                    button {
-                        height: 3rem;
+            height: 100vw;
+
+            .contact-form {
+                height: 100%;
+
+                .form {
+                    height: 100%;
+
+                    form {
+                        height: 100%;
+                        
+                        button {
+                            height: 3rem;
+                        }
                     }
                 }
             }
+
         }
 
         footer {
