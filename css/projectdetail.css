@@ -155,6 +155,7 @@ body {
             display: inline-block;
 
             img {
+                height: 17rem;
                 width: 100vw;
                 position: relative;
                 z-index: 2;
@@ -219,7 +220,6 @@ body {
                     }
 
                     &.visible {
-                        box-shadow: var(--shadow);
                         visibility: visible;
                     }
 
@@ -430,7 +430,7 @@ body {
                     }
 
                     button {
-                        height: 320px;
+                        height: 323px;
                     }
                 }
             }
