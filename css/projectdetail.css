@@ -370,6 +370,10 @@ body {
             .nav-bar {
                 padding: 0 1rem;
 
+                .nav-bar-menu.active {
+                    height: 8rem;
+                }
+
                 .nav-btn {
                     margin-left: 65vw;
                 }
@@ -378,9 +382,22 @@ body {
 
         .article {
             article {
+                .header {
+                    .titles {
+                        p {
+                            padding: 0;
+                            margin: 2rem 0;
+                        }
+                    }
+
+                    .date {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+
                 .images {
                     padding: 0 1.5rem;
-                    height: 15rem;
+                    height: 17rem;
                     width: 100%;
 
                     .blur {
@@ -419,6 +436,7 @@ body {
                                 }
         
                                 img {
+                                    max-height: none;
                                     height: 11rem;
                                 }
                             }
@@ -436,26 +454,34 @@ body {
             }
         }
 
-        .questions {
-            height: 15rem;
-            justify-content: space-around;
+        #questions {
+            height: 20rem;
 
-            p {
-                font-size: 1.3rem;
-            }
+            .questions-info {
+                height: 100%;
 
-            form {
-                display: flex;
-                gap: 1rem;
-
-                input {
-                    width: 65vw;
-                    height: 4rem;
-                }
-
-                button {
-                    width: 7rem;
-                    height: 4rem;
+                .questions {
+                    height: 100%;
+                    justify-content: space-around;
+        
+                    p {
+                        font-size: 1.3rem;
+                    }
+        
+                    form {
+                        display: flex;
+                        gap: 1rem;
+        
+                        input {
+                            width: 65vw;
+                            height: 4rem;
+                        }
+        
+                        button {
+                            width: 7rem;
+                            height: 4rem;
+                        }
+                    }
                 }
             }
         }
@@ -466,7 +492,7 @@ body {
 
             .footer {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
 
                 .links {

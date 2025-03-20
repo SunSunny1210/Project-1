@@ -223,7 +223,7 @@ body {
 
         .logos-container {
             padding: 0 1rem;
-            width: 100vw;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -276,7 +276,6 @@ body {
                     }
 
                     &.visible {
-                        box-shadow: var(--shadow);
                         visibility: visible;
                     }
 
@@ -630,6 +629,7 @@ body {
                                 }
         
                                 img {
+                                    max-height: none;
                                     height: 11rem;
                                 }
                             }
@@ -641,7 +641,7 @@ body {
                     }
 
                     button {
-                        height: 320px;
+                        height: 323px;
                     }
                 }
             }
@@ -676,26 +676,34 @@ body {
             }
         }
 
-        .questions {
+        #questions {
             height: 20rem;
-            justify-content: space-around;
 
-            p {
-                font-size: 1.3rem;
-            }
+            .questions-info {
+                height: 100%;
 
-            form {
-                display: flex;
-                gap: 1rem;
-
-                input {
-                    width: 65vw;
-                    height: 4rem;
-                }
-
-                button {
-                    width: 7rem;
-                    height: 4rem;
+                .questions {
+                    height: 100%;
+                    justify-content: space-around;
+        
+                    p {
+                        font-size: 1.3rem;
+                    }
+        
+                    form {
+                        display: flex;
+                        gap: 1rem;
+        
+                        input {
+                            width: 65vw;
+                            height: 4rem;
+                        }
+        
+                        button {
+                            width: 7rem;
+                            height: 4rem;
+                        }
+                    }
                 }
             }
         }
@@ -706,7 +714,8 @@ body {
 
             .footer {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
+                gap: 10px;
                 align-items: center;
 
                 .links {

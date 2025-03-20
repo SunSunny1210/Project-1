@@ -1,6 +1,6 @@
 let currentIndex = 0;
 const projects = document.querySelector('.projects');
-const projectSlides = document.querySelectorAll('.project a');
+const projectSlides = document.querySelectorAll('.project');
 const totalSlides = projectSlides.length;
 const projectImg = document.querySelectorAll('.project-img');
 
@@ -19,7 +19,7 @@ function updateSlider() {
         if (i === currentIndex) {
             el.classList.add('visible');
             el.classList.remove('hidden');
-
+            
         } else {
             el.classList.add('hidden');
             el.classList.remove('visible');
