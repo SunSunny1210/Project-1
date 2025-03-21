@@ -553,6 +553,12 @@ body {
                 .nav-btn {
                     margin-left: 65vw;
                 }
+                
+                .nav-bar-menu.active {
+                    height: 8rem;
+                    justify-content: space-between;
+                    padding-bottom: 1.5rem;
+                }
             }
         }
 
